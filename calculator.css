@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(99, 201, 121), rgb(167, 167, 84));
+}
+
+.calculatorWindow {
+    margin: 200px auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+    background-color: black;
+    opacity: 75%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.firstScreen {
+    display: flex;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+
+.secondScreen {
+    display: flex;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+.keyboard {
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.button {
+    width: 30%;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: black;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.button:hover {
+    background-color: gray;
+}
